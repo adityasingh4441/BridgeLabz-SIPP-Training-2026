@@ -1,0 +1,111 @@
+-- 1. CREATE COVID DATABASE SCHEMA
+
+CREATE DATABASE IF NOT EXISTS covid_db;
+USE covid_db;
+
+-- Table: covid_cases
+CREATE TABLE covid_cases (
+    country VARCHAR(50),
+    report_date DATE,
+    confirmed_cases INT,
+    deaths INT,
+    recoveries INT,
+    population BIGINT
+);
+
+-- Table: covid_deaths
+CREATE TABLE covid_deaths (
+    country VARCHAR(50),
+    report_date DATE,
+    total_deaths INT,
+    new_deaths INT
+);
+
+-- Table: covid_vaccines
+CREATE TABLE covid_vaccines (
+    country VARCHAR(50),
+    report_date DATE,
+    total_vaccinated INT,
+    fully_vaccinated INT,
+    booster_doses INT
+);
+
+
+
+-- 2. INSERT INITIAL COVID DATA
+
+INSERT INTO covid_cases
+(country, report_date, confirmed_cases, deaths, recoveries, population)
+VALUES
+('India', '2025-01-01', 45000000, 533500, 44400000, 1400000000),
+
+('India', '2025-01-15', 45050000, 533700, 44480000, 1400000000),
+
+('USA', '2025-01-01', 103000000, 1120000, 101000000, 335000000),
+
+('USA', '2025-01-15', 103500000, 1122000, 101500000, 335000000),
+
+('UK', '2025-01-01', 25000000, 232000, 24700000, 68000000),
+
+('UK', '2025-01-15', 25100000, 232500, 24800000, 68000000);
+
+
+
+-- 3. UPDATE CASE INFORMATION
+
+-- India's confirmed cases revised on 15-Jan-2025
+
+UPDATE covid_cases
+SET confirmed_cases = 45100000
+WHERE country = 'India'
+AND report_date = '2025-01-15';
+
+
+
+-- 4. DELETE INCORRECT RECORDS
+
+-- Delete wrong country name
+
+DELETE FROM covid_cases
+WHERE country = 'IN';
+
+
+-- Example: Delete duplicate records
+-- (Assuming duplicates exist)
+
+DELETE FROM covid_cases
+WHERE country = 'India'
+AND report_date = '2025-01-15'
+LIMIT 1;
+
+
+
+-- 5. ALTER TABLE
+-- Add Vaccination Rate Column
+
+ALTER TABLE covid_cases
+ADD vaccination_rate DECIMAL(5,2);
+
+
+
+-- Optional: Update vaccination rates
+
+UPDATE covid_cases
+SET vaccination_rate = 76.50
+WHERE country = 'India';
+
+UPDATE covid_cases
+SET vaccination_rate = 72.30
+WHERE country = 'USA';
+
+UPDATE covid_cases
+SET vaccination_rate = 81.20
+WHERE country = 'UK';
+
+
+
+-- Display Data
+
+SELECT * FROM covid_cases;
+SELECT * FROM covid_deaths;
+SELECT * FROM covid_vaccines;

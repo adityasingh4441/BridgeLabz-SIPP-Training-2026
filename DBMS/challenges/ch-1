@@ -1,0 +1,42 @@
+Create COVID Database Schema
+
+CREATE DATABASE covid_db;
+USE covid_db;
+
+
+CREATE TABLE covid_cases (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    country VARCHAR(100),
+    report_date DATE,
+    report_time TIME,
+    recovered_cases INT,
+    death_cases INT,
+    confirmed_cases INT
+);
+
+
+Challenge 2: Insert Initial COVID Data (DML)
+INSERT INTO covid_cases
+(country, report_date, report_time, recovered_cases, death_cases, confirmed_cases)
+VALUES
+('India', '2020-03-15', '10:00:00', 50, 2, 100);
+
+
+Challenge 3: Update Case Information (DML)
+
+UPDATE covid_cases
+SET confirmed_cases = 120
+WHERE country = 'India'
+AND report_date = '2020-03-15';
+
+
+Challenge 4: Delete Incorrect Records (DML)
+
+DELETE FROM covid_cases
+WHERE country = 'IN';
+
+
+Challenge 5: Alter Table (DDL)
+
+ALTER TABLE covid_cases
+ADD vaccination_rate FLOAT;

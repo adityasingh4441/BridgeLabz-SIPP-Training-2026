@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TowerOfHanoi {
+    public static void solveTowerOfHanoi(int disks, char source, char auxiliary, char destination) {
+        if (disks == 1) {
+            System.out.println("Move disk 1 from " + source + " to " + destination);
+            return;
+        }
+
+        solveTowerOfHanoi(disks - 1, source, destination, auxiliary);
+        System.out.println("Move disk " + disks + " from " + source + " to " + destination);
+        solveTowerOfHanoi(disks - 1, auxiliary, source, destination);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter number of disks: ");
+        int disks = scanner.nextInt();
+
+        solveTowerOfHanoi(disks, 'A', 'B', 'C');
+    }
+}

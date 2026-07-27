@@ -24,5 +24,6 @@ public class NaturalSumFor {
         } else {
             System.out.println("Not a natural number.");
         }
-    }
+    
+        sc.close();}
 }

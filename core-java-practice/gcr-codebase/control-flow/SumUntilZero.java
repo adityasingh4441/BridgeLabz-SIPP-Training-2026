@@ -13,5 +13,6 @@ public class SumUntilZero {
         }
 
         System.out.println("Total = " + total);
-    }
+    
+        sc.close();}
 }

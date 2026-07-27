@@ -23,5 +23,6 @@ public class SimpleInterest {
                 + " for Principal " + principal
                 + ", Rate of Interest " + rate
                 + " and Time " + time);
-    }
+    
+        scanner.close();}
 }

@@ -16,5 +16,6 @@ public class FactorialRecursion {
         int number = scanner.nextInt();
 
         System.out.println(calculateFactorial(number));
-    }
+    
+        scanner.close();}
 }

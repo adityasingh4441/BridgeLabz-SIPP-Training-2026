@@ -48,5 +48,6 @@ public class ArraySubsetsRecursion {
         }
 
         generateSubsetsBySize(array);
-    }
+    
+        scanner.close();}
 }

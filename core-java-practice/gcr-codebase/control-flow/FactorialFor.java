@@ -17,5 +17,6 @@ public class FactorialFor {
         } else {
             System.out.println("Not a natural number.");
         }
-    }
+    
+        sc.close();}
 }

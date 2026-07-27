@@ -21,5 +21,6 @@ public class RemainderAndQuotient {
 
         System.out.println("The quotient is " + result[1]);
         System.out.println("The remainder is " + result[0]);
-    }
+    
+        scanner.close();}
 }

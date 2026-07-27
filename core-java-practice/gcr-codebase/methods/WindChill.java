@@ -18,5 +18,6 @@ public class WindChill {
         double windChill = calculateWindChill(temperature, windSpeed);
 
         System.out.println("The wind chill temperature is " + windChill);
-    }
+    
+        scanner.close();}
 }

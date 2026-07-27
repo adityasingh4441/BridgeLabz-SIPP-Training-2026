@@ -31,5 +31,6 @@ public class NestedTryCatchDemo {
         } catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println("Invalid array index!");
         }
-    }
+    
+        scanner.close();}
 }

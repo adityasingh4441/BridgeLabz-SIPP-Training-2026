@@ -19,5 +19,6 @@ public class UncheckedExceptionDemo {
         } catch (InputMismatchException exception) {
             System.out.println("Please enter numeric values");
         }
-    }
+    
+        scanner.close();}
 }

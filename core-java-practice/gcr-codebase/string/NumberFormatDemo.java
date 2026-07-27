@@ -19,5 +19,6 @@ public class NumberFormatDemo {
         Scanner sc = new Scanner(System.in);
         String text = sc.next();
         handle(text);
-    }
+    
+        sc.close();}
 }

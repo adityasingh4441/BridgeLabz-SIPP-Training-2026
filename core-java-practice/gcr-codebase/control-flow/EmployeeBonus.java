@@ -13,5 +13,6 @@ public class EmployeeBonus {
         } else {
             System.out.println("Bonus = 0");
         }
-    }
+    
+        sc.close();}
 }

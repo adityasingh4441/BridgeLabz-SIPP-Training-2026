@@ -31,5 +31,6 @@ public class FirstOccurrence {
         String needle = scanner.nextLine();
 
         System.out.println(strStr(haystack, needle));
-    }
+    
+        scanner.close();}
 }

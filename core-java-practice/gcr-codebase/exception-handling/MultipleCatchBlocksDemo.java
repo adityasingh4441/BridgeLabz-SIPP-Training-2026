@@ -30,5 +30,6 @@ public class MultipleCatchBlocksDemo {
         int index = scanner.nextInt();
 
         printValueAtIndex(numbers, index);
-    }
+    
+        scanner.close();}
 }

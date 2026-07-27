@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Handshakes {
+public class MethodsHandshakes {
     public static int calculateHandshakes(int numberOfStudents) {
         return (numberOfStudents * (numberOfStudents - 1)) / 2;
     }
@@ -14,5 +14,6 @@ public class Handshakes {
         int handshakes = calculateHandshakes(numberOfStudents);
 
         System.out.println("The maximum number of possible handshakes is " + handshakes);
-    }
+    
+        scanner.close();}
 }

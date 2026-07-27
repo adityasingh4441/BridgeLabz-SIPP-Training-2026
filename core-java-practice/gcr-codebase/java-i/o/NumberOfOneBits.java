@@ -19,5 +19,6 @@ public class NumberOfOneBits {
         int number = scanner.nextInt();
 
         System.out.println(hammingWeight(number));
-    }
+    
+        scanner.close();}
 }

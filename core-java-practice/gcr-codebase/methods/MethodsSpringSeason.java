@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SpringSeason {
+public class MethodsSpringSeason {
     public static boolean isSpringSeason(int month, int day) {
         return (month == 3 && day >= 20)
                 || month == 4
@@ -22,5 +22,6 @@ public class SpringSeason {
         } else {
             System.out.println("Not a Spring Season");
         }
-    }
+    
+        scanner.close();}
 }

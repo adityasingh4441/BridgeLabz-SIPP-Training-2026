@@ -19,5 +19,6 @@ public class CustomExceptionDemo {
         } catch (InvalidAgeException exception) {
             System.out.println(exception.getMessage());
         }
-    }
+    
+        scanner.close();}
 }

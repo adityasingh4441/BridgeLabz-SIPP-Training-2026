@@ -24,5 +24,6 @@ public class PalindromeRecursion {
         } else {
             System.out.println("Not Palindrome");
         }
-    }
+    
+        scanner.close();}
 }

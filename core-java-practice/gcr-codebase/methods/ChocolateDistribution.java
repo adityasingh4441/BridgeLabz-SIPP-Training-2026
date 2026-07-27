@@ -21,5 +21,6 @@ public class ChocolateDistribution {
 
         System.out.println("Each child will get " + result[1] + " chocolates");
         System.out.println("Remaining chocolates are " + result[0]);
-    }
+    
+        scanner.close();}
 }

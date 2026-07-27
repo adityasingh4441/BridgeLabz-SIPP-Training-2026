@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SpringSeason {
+public class ControlFlowSpringSeason {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -15,5 +15,6 @@ public class SpringSeason {
         } else {
             System.out.println("Not a Spring Season");
         }
-    }
+    
+        sc.close();}
 }

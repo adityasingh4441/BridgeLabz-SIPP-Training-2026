@@ -19,5 +19,6 @@ public class PowerRecursion {
         int exponent = scanner.nextInt();
 
         System.out.println(calculatePower(base, exponent));
-    }
+    
+        scanner.close();}
 }

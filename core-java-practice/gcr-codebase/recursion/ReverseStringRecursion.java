@@ -16,5 +16,6 @@ public class ReverseStringRecursion {
         String text = scanner.nextLine();
 
         System.out.println(reverseString(text));
-    }
+    
+        scanner.close();}
 }

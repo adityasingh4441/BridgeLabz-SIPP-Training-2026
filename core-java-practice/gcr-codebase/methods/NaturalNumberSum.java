@@ -20,5 +20,6 @@ public class NaturalNumberSum {
         int sum = findNaturalNumberSum(number);
 
         System.out.println("The sum of " + number + " natural numbers is " + sum);
-    }
+    
+        scanner.close();}
 }

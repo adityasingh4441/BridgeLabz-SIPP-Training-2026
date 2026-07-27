@@ -37,5 +37,6 @@ public class SmallestAndLargest {
 
         System.out.println("The smallest number is " + result[0]);
         System.out.println("The largest number is " + result[1]);
-    }
+    
+        scanner.close();}
 }

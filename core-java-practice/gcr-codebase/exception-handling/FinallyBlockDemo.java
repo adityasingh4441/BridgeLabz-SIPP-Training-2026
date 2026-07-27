@@ -18,5 +18,6 @@ public class FinallyBlockDemo {
         } finally {
             System.out.println("Operation completed");
         }
-    }
+    
+        scanner.close();}
 }

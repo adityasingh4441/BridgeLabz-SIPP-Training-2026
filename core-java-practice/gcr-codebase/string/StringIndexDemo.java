@@ -17,5 +17,6 @@ public class StringIndexDemo {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         handle(s);
-    }
+    
+        sc.close();}
 }

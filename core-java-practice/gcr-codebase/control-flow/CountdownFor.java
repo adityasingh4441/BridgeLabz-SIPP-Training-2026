@@ -9,5 +9,6 @@ public class CountdownFor {
         for (int i = counter; i >= 1; i--) {
             System.out.println(i);
         }
-    }
+    
+        sc.close();}
 }

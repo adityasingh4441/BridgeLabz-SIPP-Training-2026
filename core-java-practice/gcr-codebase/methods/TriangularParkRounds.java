@@ -21,5 +21,6 @@ public class TriangularParkRounds {
         double rounds = calculateRounds(side1, side2, side3);
 
         System.out.println("The athlete must complete " + rounds + " rounds to run 5 km");
-    }
+    
+        scanner.close();}
 }

@@ -27,5 +27,6 @@ public class ThrowThrowsDemo {
         } catch (IllegalArgumentException exception) {
             System.out.println("Invalid input: Amount and rate must be positive");
         }
-    }
+    
+        scanner.close();}
 }

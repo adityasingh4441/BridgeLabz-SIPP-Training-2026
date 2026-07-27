@@ -23,5 +23,6 @@ public class ArrayIndexDemo {
             arr[i] = sc.next();
         }
         handle(arr);
-    }
+    
+        sc.close();}
 }

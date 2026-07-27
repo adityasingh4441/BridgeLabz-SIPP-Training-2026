@@ -19,5 +19,6 @@ public class TowerOfHanoi {
         int disks = scanner.nextInt();
 
         solveTowerOfHanoi(disks, 'A', 'B', 'C');
-    }
+    
+        scanner.close();}
 }

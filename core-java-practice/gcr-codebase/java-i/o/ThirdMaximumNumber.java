@@ -43,5 +43,6 @@ public class ThirdMaximumNumber {
         }
 
         System.out.println(thirdMax(numbers));
-    }
+    
+        scanner.close();}
 }

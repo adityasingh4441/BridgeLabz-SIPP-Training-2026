@@ -15,5 +15,6 @@ public class calculator {
         System.out.println("The addition, subtraction, multiplication and division value of 2 numbers "
                 + number1 + " and " + number2 + " is "
                 + add + ", " + sub + ", " + mul + ", and " + div);
-    }
+    
+        input.close();}
 }

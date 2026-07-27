@@ -10,5 +10,6 @@ public class FeetConverter {
         double miles = yards / 1760;
 
         System.out.println("The distance in yards is " + yards + " and in miles is " + miles);
-    }
+    
+        sc.close();}
 }

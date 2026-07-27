@@ -38,5 +38,6 @@ public class BankTransactionSystem {
         } catch (IllegalArgumentException exception) {
             System.out.println(exception.getMessage());
         }
-    }
+    
+        scanner.close();}
 }

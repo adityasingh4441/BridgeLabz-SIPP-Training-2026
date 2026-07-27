@@ -31,5 +31,6 @@ public class SubStringDemo {
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(compare(s1, s2));
-    }
+    
+        sc.close();}
 }

@@ -12,5 +12,6 @@ public class FeeDiscountInput {
 
         System.out.println("The discount amount is INR " + discount +
                 " and final discounted fee is INR " + finalFee);
-    }
+    
+        input.close();}
 }

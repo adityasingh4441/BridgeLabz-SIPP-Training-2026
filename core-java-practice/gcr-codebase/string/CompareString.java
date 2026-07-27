@@ -21,5 +21,6 @@ public class CompareString {
 
         System.out.println(result1);
         System.out.println(result2);
-    }
+    
+        sc.close();}
 }

@@ -21,5 +21,6 @@ public class TrigonometricFunctions {
         System.out.println("Sine is " + result[0]);
         System.out.println("Cosine is " + result[1]);
         System.out.println("Tangent is " + result[2]);
-    }
+    
+        scanner.close();}
 }

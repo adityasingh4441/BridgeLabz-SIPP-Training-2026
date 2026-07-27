@@ -17,5 +17,6 @@ public class PrintNumbersReverse {
         int number = scanner.nextInt();
 
         printNumbers(number);
-    }
+    
+        scanner.close();}
 }

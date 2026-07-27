@@ -12,5 +12,6 @@ public class NaturalSum {
         } else {
             System.out.println("The number " + number + " is not a natural number");
         }
-    }
+    
+        sc.close();}
 }

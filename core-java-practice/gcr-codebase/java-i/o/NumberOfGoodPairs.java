@@ -28,5 +28,6 @@ public class NumberOfGoodPairs {
         }
 
         System.out.println(numIdenticalPairs(numbers));
-    }
+    
+        scanner.close();}
 }

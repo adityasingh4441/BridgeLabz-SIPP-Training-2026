@@ -9,5 +9,6 @@ public class smallest {
         int number3 = sc.nextInt();
 
         System.out.println("Is the first number the smallest? " + (number1 < number2 && number1 < number3));
-    }
+    
+        sc.close();}
 }

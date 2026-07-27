@@ -21,5 +21,6 @@ public class StringPermutationsRecursion {
         String text = scanner.nextLine();
 
         generatePermutations(text, "");
-    }
+    
+        scanner.close();}
 }

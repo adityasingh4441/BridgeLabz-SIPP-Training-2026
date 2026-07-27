@@ -19,5 +19,6 @@ public class FibonacciRecursion {
         int number = scanner.nextInt();
 
         System.out.println(findFibonacci(number));
-    }
+    
+        scanner.close();}
 }

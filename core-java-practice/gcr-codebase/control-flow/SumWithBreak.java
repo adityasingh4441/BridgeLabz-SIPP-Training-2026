@@ -17,5 +17,6 @@ public class SumWithBreak {
         }
 
         System.out.println("Total = " + total);
-    }
+    
+        sc.close();}
 }

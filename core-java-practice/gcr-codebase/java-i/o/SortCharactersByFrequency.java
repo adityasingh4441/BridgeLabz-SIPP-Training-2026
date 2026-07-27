@@ -33,5 +33,6 @@ public class SortCharactersByFrequency {
         String text = scanner.nextLine();
 
         System.out.println(frequencySort(text));
-    }
+    
+        scanner.close();}
 }

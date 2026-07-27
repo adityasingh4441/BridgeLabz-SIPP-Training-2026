@@ -16,5 +16,6 @@ public class NaturalNumberSumRecursion {
         int number = scanner.nextInt();
 
         System.out.println(findSum(number));
-    }
+    
+        scanner.close();}
 }

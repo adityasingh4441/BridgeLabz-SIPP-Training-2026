@@ -27,5 +27,6 @@ public class CharArrayDemo {
         char[] b = text.toCharArray();
 
         System.out.println(compare(a, b));
-    }
+    
+        sc.close();}
 }

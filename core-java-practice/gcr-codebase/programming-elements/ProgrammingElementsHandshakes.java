@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Handshakes {
+public class ProgrammingElementsHandshakes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -9,5 +9,6 @@ public class Handshakes {
         int handshakes = (numberOfStudents * (numberOfStudents - 1)) / 2;
 
         System.out.println("The maximum number of handshakes is " + handshakes);
-    }
+    
+        sc.close();}
 }

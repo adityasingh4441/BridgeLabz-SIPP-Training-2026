@@ -39,5 +39,6 @@ public class SimplifyPath {
         String path = scanner.nextLine();
 
         System.out.println(simplifyPath(path));
-    }
+    
+        scanner.close();}
 }

@@ -26,5 +26,6 @@ public class PositiveNegativeZero {
         } else {
             System.out.println(number + " is zero");
         }
-    }
+    
+        scanner.close();}
 }

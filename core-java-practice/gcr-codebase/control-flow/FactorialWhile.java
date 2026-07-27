@@ -19,5 +19,6 @@ public class FactorialWhile {
         } else {
             System.out.println("Not a natural number.");
         }
-    }
+    
+        sc.close();}
 }
